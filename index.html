@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Train Scheduler</title>
+        <title>GIFtastic Homework</title>
+        <!-- Reset -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <!-- Bootstrap File -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Firebase Reference -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <!---moment.js-->
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <!-- style.css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="pgHead">
+                <h1 id="title">Gotham City Transit Commission</h1>
+                <h3 id="tagline">Live Schedule</h3>
+            </div>
+
+            <div class="trainSched">
+                <table id="enteredTrains">
+                    <tr id="tableHead">
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="addTrainSection">
+                <p id=addTrainTitle>Add a Train</p>
+                <form id="addTrain">
+                    <label for="trainName">Train Name: </label>
+                    <input type="text" id="trainName"><br>
+                    <label for="trainDest">Destination: </label>
+                    <input type="text" id="trainDest"><br>
+                    <label for="trainTime">Time of First Train (HH:mm military time): </label>
+                    <input type="text" id="trainTime"><br>
+                    <label for="trainFreq">Frequency (in min):</label>
+                    <input type="text" id="trainFreq"><br>
+                    <input type="submit" id="submit" value="submit">
+                </form>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Copyright &copy Maria Azam</p>
+        </footer>
+
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </body>
+</html>
